@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Hot Restaurant</title>
   <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet"
@@ -18,12 +20,18 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1><center><i class="fab fa-free-code-camp">Hot Restaurant</center></h1>
-      <h3><center>We only have 5 tables! Book your seat before they all are gone!</center></h3>
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"> Hot Restaurant </span></h1>
+      <h3 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h3>
       <hr>
-      <a href="/table"><center><button class="btn btn-danger btn-lg"><span class="fas fa-clipboard-list"></span> View Tables</button></a>
-      <a href="/api/reservation"><button class="btn btn-danger btn-lg"><span
-            class="fas fa-money-check"></span> Make Reservation</button></center></a>
+      <div class="text-center">
+      <a href="/table"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
+      <a href="/add">
+        <button type= "button" class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-credit-card">
+          </span> Make Reservation
+        </button>
+      </a>
+    </div>
     </div>
   </div>
 
